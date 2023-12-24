@@ -1,0 +1,157 @@
+:root {
+    --primario: #C5FFF8;
+    --secundario: #96EFFF;
+    --secundarioOscuro: #5FBDFF;
+    --terciario: #7B66FF;
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrincipal: font-family: 'Rubik', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundarioOscuro);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: var(--secundarioOscuro);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    max-width: 50%;
+    margin: 3rem 0;
+}
+
+.navegacion {
+    background-color: var(--terciario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+
+.navegacion__enlace:hover {
+    color: var(--secundarioOscuro);
+}
+
+.navegacion__enlace--activo {
+    color: var(--secundarioOscuro);
+}
+
+.footer {
+    background-color: var(--terciario);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto {
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+@media(min-width:768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.producto {
+    background-color: var(--primario);
+    padding: 1rem;
+}
+
+.producto__imagen {
+    max-width: 100%;
+    width: 450px;
+    height: 350px;
+}
+
+.producto__informacion {
+    
+}
+
+.producto__nombre {
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--terciario);
+    margin: 1rem 0;
+}
+
+.producto__precio {
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--secundarioOscuro);
+    margin: 1rem 0;
+}
